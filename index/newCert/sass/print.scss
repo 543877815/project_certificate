@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import "mixin";
+@import "global";
+@import "layout/header";
+@import "layout/content";
+
+@media print{
+	#one,
+	#two,
+	#three{
+		border: 0px;
+		width: 100%;
+	}
+	.margin-control{
+		width: 0!important;
+		height: 0!important;
+		margin: 0!important;
+		padding: 0!important;
+	}
+	#download{
+		display: none;
+	}
+	img{
+		width: 99%!important;
+		height: 99%!important;
+	}
+	.input,input,div,img{
+		border: 0px!important;
+	}
+	.calendar_logo,
+	.drapdown_menu,
+	.calendar,
+	.drapdown_button,
+	.button_add,
+	.button_sub{
+		display: none!important;
+	}
+	#one,
+	#two,
+	#three{
+		margin:0!important;
+		width: 100%!important;
+	}
+	#header{
+		width: 0!important;
+		height: 0!important;
+	}
+	#one{
+		.selected{
+			height: 90%!important;
+		}
+		.CalibratedBy{
+			top: 60.6%;
+		}
+		.CalibratedBy{
+			top: 60.6%;
+		}
+		.ReceivedYear,
+		.CalibrationYear{
+			width: 5%;
+			height: 1.5%;
+			left: 45.5%;
+			font-size: 12px;
+		}
+		.ReceivedYear,
+		.ReceivedMonth,
+		.ReceivedDay{
+			top: 71.5%;
+		}
+		.CalibrationYear,
+		.CalibrationMonth,
+		.CalibrationDay{
+			top: 77.7%;
+		}
+		.ReceivedMonth,
+		.CalibrationMonth,
+		.ReceivedDay,
+		.CalibrationDay{
+			width: 3%;
+			height: 1.5%;
+			font-size: 12px;
+		}
+		.ReceivedDay,
+		.CalibrationDay{
+			left: 58%
+		}
+		.ReceivedMonth,
+		.CalibrationMonth,{
+			left: 52.7%;
+		}
+	}
+	#two{
+		.Certificate{
+			top: 4.8%;
+		}
+		.CalibrationList{
+			width: 86%;
+			height: 21.3%;
+			.list{
+				border-bottom: 1px solid black!important;
+			}
+		}
+		.recommend{
+			top: 75.9%;
+		}
+	}
+	#three{
+		.result{
+			top: 17.2%;
+			tr{
+				font-size: 12px;
+			}
+		}
+	}
+}

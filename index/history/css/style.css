@@ -1,0 +1,215 @@
+html{
+	max-height: 100%;
+	max-width: 100%;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	max-height: 100%;
+	max-width: 100%;
+	min-width: 1366px;
+	min-height: 768px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../../../imgs/login/background.jpg") no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+#nav{
+	width: 100%;
+}
+#nav .container{
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+}
+#nav .one{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-content: center;
+}
+#nav .andong_logo{
+	margin-top: 12px
+}
+#nav .title{
+	margin: 0;
+	font-size: 20px;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-left: -180px;
+	font-family: 宋体;
+	box-sizing: border-box;
+	padding-left:40px;
+	background: url("../../../imgs/navigator/home.png")no-repeat left;
+	cursor: pointer;
+}
+#nav .user{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	width: 200px;
+}
+#nav .user .one{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+#nav .user .logo{
+	border-radius: 50%;
+	background-color: #ddd9d9;
+	width: 39px;
+	height: 39px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+#nav .user .name{
+	margin-top: 16px;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	margin-left: 8px;
+}
+#nav .user .shutdown{
+	margin-top: 17px;
+	cursor: pointer;
+}
+#nav .two{
+	margin-top: 12px;
+	width: 980px;
+}
+#nav .line{
+	float: right;
+}
+#container{
+	width: 973px;
+	margin: 0 auto;
+	margin-top: 60px;
+	display: flex;
+	flex-flow: column;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 3px solid #e4e109;
+	min-height: 550px;
+	position: relative;
+}
+#container .line{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	text-align: center;
+	border-bottom: 3px solid #e4e109;
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	font-family: 微软雅黑;
+}
+#container .line .name{
+	width: 300px;
+	flex: 2;
+}
+#container .line .date{
+	flex: 1;
+	position: relative;
+	left: -45px;
+}
+#container .line .number{
+	flex: 0.83;
+}
+#container .line .operation{
+	flex: 0.9;
+}
+#container .title{
+	color: white;
+	background-color: #e4e109;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+#container .reEdit{
+	padding-right: 35px;
+	cursor: pointer;
+}
+#container .reEdit:hover{
+	color: #ff0000;
+}
+#container .delete{
+	padding-left: 35px;
+	cursor: pointer;
+}
+#container .delete:hover{
+	color: #ff0000;
+}
+#container .title .name{
+	flex: 2.5;
+}
+#container .title .date{
+	flex: 2;
+	margin-left: -110px;
+	left: 0;
+}
+#container .title .number, #container .title .operation{
+	flex: 1;
+}
+
+#container .selector{
+	position: absolute;
+	bottom: 40px;
+	height: 36px;
+	right: 106px;
+	z-index: 9999;
+}
+#container .selector button{
+	cursor: pointer;
+	background-color: #ccc;
+	color: #000;
+	font-size: 14px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+}
+#container .selector .firstPage,
+#container .selector .lastPage{
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
+#container .selector .prev,
+#container .selector .next,
+#container .selector .page{
+	padding-left: 14px;
+	padding-right: 14px;
+	border-radius: 5px;
+}
+#container .selector .firstPage,
+#container .selector .prev,
+#container .selector .page,
+#container .selector .next{
+	margin-right: 30px;
+}
+
+@media screen and (max-height: 1024px) and (min-height: 896px){
+	#nav{
+		margin-top: 50px;
+	}
+	#container{
+		margin-top: 100px;
+	}
+}
+@media screen and (max-height: 896px) and (min-height: 769px){
+	#nav{
+		margin-top: 25px;
+	}
+	#container{
+		margin-top: 120px;
+	}
+}

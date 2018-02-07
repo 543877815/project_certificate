@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>证书生成</title>
+	<link rel="stylesheet" href="css/style.css?v=2" media="screen" />
+	<link rel="stylesheet" href="css/print.css" media="print" />
+</head>
+<body>
+	<div id="initial">
+		<!-- 添加canvas标签，并加上红色边框以便于在页面上查看 -->
+		<div class="container">
+			<canvas id="canvasOutside" width="300px" height="300px">
+				您的浏览器不支持canvas标签。
+			</canvas>
+			<canvas id="canvasInside" width="300px" height="300px">
+			</canvas>
+			<canvas id="canvasCenter" width="300px" height="300px">
+			</canvas>
+			<div class="text">Coming Soon</div>
+			<div class="percentage"></div>
+		</div>
+	</div>
+	<div id="nav">
+		<div class="container">
+			<div class="one">
+				<div>
+					imgs
+					<img src="../../imgs/navigator/logo.png" alt="" class="andong_logo">
+				</div>
+				<div>
+					<h2 class="title" onselect="return false" onclick="window.location.href='../index.html'">返回首页</h2>
+				</div>
+				<div class="user">
+					<div class="one">
+						<img src="../../imgs/navigator/user.png" alt="" class="logo">
+						<span class="name">admin</span>
+					</div>
+					<div  onclick="window.location.href='../../login.html'">
+						<img src="../../imgs/navigator/shutdown.png" alt="" class="shutdown">
+					</div>
+				</div>
+			</div>
+			<div class="two">
+				<img src="../../imgs/index/line.png" alt="" class="line">
+			</div>
+		</div>
+		<div class="nameContainer">
+			<span>名称：</span>
+			<input type="text" class="name CompanyName" >
+		</div>
+	</div>
+	<nav id="controler">
+		<div id="download" class="button">生成PDF<img src="../../imgs/Cert/document.png" alt=""></div>
+		<div class="returnTop button">回到顶部<img src="../../imgs/Cert/circleUp.png" alt=""></div>
+	</nav>
+	<div id="one">
+		<img lowsrc="imgs/1.png" alt="" class="background" src="imgs/1.png">
+		<canvas id="barcode">您的浏览器不支持canvas标签。</canvas>
+		<input type="text" class="Certificate" readonly="readonly">
+		<input type="text" class="Customer">
+		<input type="text" class="Address">
+		<input type="text" class="Description">
+		<input type="text" class="ModelType">
+		<input type="text" class="SerialNo">
+		<input type="text" class="Manufacturer">
+
+		<div class="Approved">
+			<img src="imgs/sign1.png" class="selected" data-Id="1">
+			<img src="imgs/drapdown.png" class="drapdown_button">
+			<div class="drapdown_menu" style="display: none;">
+<!-- 				<img src="imgs/sign1.png" class="option" data-Id="1">
+				<img src="imgs/sign2.png" class="option" data-Id="2">
+				<img src="imgs/sign3.png" class="option" data-Id="3"> -->
+			</div>
+		</div>
+		<div class="CheckedBy">
+			<img src="imgs/sign2.png" class="selected" data-Id="1">
+			<div class="drapdown_menu" style="display: none;">
+<!-- 				<img src="imgs/sign1.png" class="option" data-Id="1">
+				<img src="imgs/sign2.png" class="option" data-Id="2">
+				<img src="imgs/sign3.png" class="option" data-Id="3"> -->
+			</div>
+			<img src="imgs/drapdown.png" class="drapdown_button">
+		</div>
+		<div class="CalibratedBy">
+			<img src="imgs/sign3.png" class="selected" data-Id="1">
+			<div class="drapdown_menu" style="display: none;">
+<!-- 				<img src="imgs/sign1.png" class="option" data-Id="1">
+				<img src="imgs/sign2.png" class="option" data-Id="2">
+				<img src="imgs/sign3.png" class="option" data-Id="3"> -->
+			</div>
+			<img src="imgs/drapdown.png" class="drapdown_button">
+		</div>
+		<div class="ReceivedContainer">
+			<input type="text" class="ReceivedYear Year">
+			<input type="text" class="ReceivedMonth Month">
+			<input type="text" class="ReceivedDay Day">
+			<img src="imgs/calendar.png" class="calendar_logo ReceivedCalendar_logo">
+			<div class="ReceivedCalendar calendar" style="display: none;"></div>
+		</div>
+		<div class="CalibrationContainer">
+			<input type="text" class="CalibrationYear Year">
+			<input type="text" class="CalibrationMonth Month">
+			<input type="text" class="CalibrationDay Day">
+			<img src="imgs/calendar.png" class="calendar_logo CalibrationCalendar_logo">
+			<div class="CalibrationCalendar calendar" style="display: none;"></div>
+		</div>
+		<div class="code"></div>
+		<input type="text" class="presentPage cn">
+		<input type="text" class="totalPage cn">
+		<input type="text" class="presentPage en">
+		<input type="text" class="totalPage en">
+	</div>
+	<div id="two">
+		<img lowsrc="imgs/2.png" alt="" class="background" src="imgs/2.png">
+
+		<input type="text" class="Certificate" readonly="readonly">
+		<div class="ReferenceDocuments">
+			<div contenteditable="true" class="input"></div>
+		</div>
+		<div class="CalibrationList">
+			<div class="list" data-Id="0">
+				<img src="imgs/Add.png" class="button_add">
+				<div class="inputContainer Name">
+					<div class="input CalibrationItem" contenteditable="true"></div>
+				</div>
+				<div class="inputContainer No">
+					<div class="input CalibrationItem" contenteditable="true"></div>
+				</div>
+				<div class="inputContainer MeasuringRange">
+					<div class="input CalibrationItem" contenteditable="true"></div>
+				</div>
+				<div class="inputContainer MPE">
+					<div class="input CalibrationItem" contenteditable="true"></div>
+				</div>
+				<div class="inputContainer CertificateNo">
+					<div class="input CalibrationItem" contenteditable="true"></div>
+				</div>
+				<div class="inputContainer ValidDateTo">
+					<div class="input CalibrationItem" contenteditable="true"></div>
+				</div>
+			</div>
+		</div>
+
+		<input type="text" class="Address">
+		<input type="text" class="Temperature">
+		<input type="text" class="RelativeHumidity">
+		<input type="text" class="Other">
+		<input type="text" class="condition">
+		<input type="text" class="recommend">
+
+		<input type="text" class="presentPage cn">
+		<input type="text" class="totalPage cn">
+		<input type="text" class="presentPage en">
+		<input type="text" class="totalPage en">
+	</div>
+	<div id="three">
+		<img lowsrc="imgs/3.png" src="imgs/3.png" alt="" class="background">
+
+		<input type="text" class="Certificate" readonly="readonly">
+		<table class="result">
+			<tbody>
+				<tr>
+					<td class="title">
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="title">
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+					<td>
+						<div contenteditable="true" class="input resultItem"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="text" class="U">
+		<input type="text" class="k">
+
+		<input type="text" class="x cn">
+		<input type="text" class="totalPage cn">
+		<input type="text" class="presentPage en">
+		<input type="text" class="totalPage en">
+	</div>
+	<script src="script/jquery-3.2.1.min.js"></script>
+	<script src="script/img-preload.js"></script>
+	<script src="../../script/common.js"></script>
+	<script src="script/FileSaver.js/FileSaver.min.js"></script>
+	<script src="script/jsPDF-1.3.2/dist/jspdf.min.js"></script>
+	<script src="script/qrcodejs-master/qrcode.js"></script>	
+	<script src="script/html2canvas-0.4.1/build/html2canvas.min.js"></script>
+	<script src="script/JsBarcode/dist/JsBarcode.all.min.js"></script>
+	<script src="script/script.js?v=2"></script>
+</body>
+</html>

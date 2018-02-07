@@ -1,0 +1,503 @@
+@charset "utf-8";
+@import "variables";
+#navigation{
+	position: fixed;
+	height: 50px;
+	width: 30px;
+	z-index: 9999;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 1366px;
+	min-height: 768px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../../../imgs/Cert/background.jpg");
+}
+#one,
+#two,
+#three
+{
+	position: relative;
+	margin: 0 20% 0;
+	width: 60%;
+	border:1px solid black;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+
+}
+input{
+	height: $input-height;
+	position: absolute;
+	font-size: $input-font-size;
+	font-family: $input-font-family;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,0);
+}
+.input{
+	font-family: $input-font-family;
+	font-size: $input-class-font-size;
+}
+.Certificate{
+	border: 0px;
+}
+#one{
+	#barcode{
+		position: absolute;
+		top: 20.7%;
+		left: 69%;
+		width: 20%;
+		height: 6%;
+	}
+	.Certificate
+	{	
+		top: $img1-Certificate-top;
+		left: $img1-Certificate-left;
+
+		width: $img1-Certificate-width;
+		height: $img1-Certificate-height;
+	}
+	.Customer
+	{
+		top: $img1-Customer-top;
+		left: $img1-Customer-left;
+
+		width: $img1-Customer-width;
+		height: $img1-Customer-height;
+	}
+	.Address{
+		top: $img1-Address-top;
+		left: $img1-Address-left;
+
+		width: $img1-Address-width;
+		height: $img1-Address-height;
+	}
+	.Description{
+		top: $img1-Description-top;
+		left: $img1-Description-left;
+
+		width: $img1-Description-width;
+		height: $img1-Description-height;
+	}
+	.ModelType{
+		top: $img1-ModelType-top;
+		left: $img1-ModelType-left;
+
+		width: $img1-ModelType-width;
+		height: $img1-ModelType-height;
+	}
+	.SerialNo{
+		top: $img1-SerialNo-top;
+		left: $img1-SerialNo-left;
+
+		width: $img1-SerialNo-width;
+		height: $img1-SerialNo-height;
+	}
+	.Manufacturer{
+		top: $img1-Manufacturer-top;
+		left: $img1-Manufacturer-left;
+
+		width: $img1-Manufacturer-width;
+		height: $img1-Manufacturer-height;
+	}
+	.Approved,
+	.CheckedBy,
+	.CalibratedBy{
+		.drapdown_button{
+			border:0px;
+			height: $img1-dropdown-button-height;
+			top: $img1-dropdown-button-top;
+			right: $img1-dropdown-button-right;
+			width: auto;
+			position: absolute;
+			cursor: pointer;
+			overflow: visible;
+			&:hover{
+				border: 1px solid black;
+			}
+		}
+		.drapdown_menu{
+			position: absolute;
+			height: $img1-dropdown-menu-height;
+			top: $img1-dropdown-menu-top;
+			z-index:9999;
+			display: flex;
+			flex-flow: column;
+			overflow: auto;
+			img{
+				cursor: pointer;
+				border: 1px solid grey;
+				border-top: 0px;
+				height: 100%;
+				&:first-child{
+					border-top:1px solid grey;
+				}
+			}
+		}	
+		.selected{
+			position: absolute;
+			height: 100%;
+			border: 0;
+			width: 100%;
+		}
+		position: absolute;
+	}
+	.Approved{
+		top: $img1-Approved-top;
+		left: $img1-Approved-left;
+
+		width: $img1-Approved-width;
+		height: $img1-Approved-height;
+	}
+	.CheckedBy{
+		top: $img1-CheckedBy-top;
+		left: $img1-CheckedBy-left;
+
+		width: $img1-CheckedBy-width;
+		height: $img1-CheckedBy-height;
+	}
+	.CalibratedBy{
+		top: $img1-CalibratedBy-top;
+		left: $img1-CalibratedBy-left;
+
+		width: $img1-CalibratedBy-width;
+		height: $img1-CalibratedBy-height;
+	}
+	.ReceivedCalendar_logo,
+	.CalibrationCalendar_logo{
+		border: 1px;
+		position: absolute;
+		cursor: pointer;
+		&:hover{
+			border: 1px solid black;
+		}
+	}
+	.ReceivedCalendar_logo{
+		top: $img1-ReceivedCalendar-button-top;
+		left: $img1-Calendar-button-left;
+		width: $img1-Calendar-button-width;
+		height: $img1-Calendar-button-height;
+	}
+	.CalibrationCalendar_logo{
+		top: $img1-CalibrationCalendar-button-top;
+		left: $img1-Calendar-button-left;
+		width: $img1-Calendar-button-width;
+		height: $img1-Calendar-button-height;
+	}
+	.ReceivedCalendar,
+	.CalibrationCalendar{
+		position: absolute;
+		z-index: 9999;
+	}
+	.ReceivedCalendar{
+		top:$img1-ReceivedCalendar-top;
+		left:$img1-ReceivedCalendar-left;
+	}
+	.CalibrationCalendar{
+		top: $img1-CalibrationCalendar-top;
+		left: $img1-CalibrationCalendar-left;
+	}
+	.ReceivedYear{
+		top: $img1-received-date-top;
+		left: $img1-Year-left;
+
+		width: $img1-Year-width;
+		height: $img1-date-height;
+	}
+
+	.ReceivedMonth{
+		top: $img1-received-date-top;
+		left: $img1-Month-left;
+		width: $img1-Month-width;
+		height: $img1-date-height;
+	}
+	.ReceivedDay{
+		top: $img1-received-date-top;
+		left: $img1-Day-left;
+
+		width: $img1-Day-width;
+		height: $img1-date-height;
+	}
+	.CalibrationYear{
+		top: $img1-calibration-date-top;
+		left: $img1-Year-left;
+
+		width: $img1-Year-width;
+		height: $img1-date-height;
+	}
+
+	.CalibrationMonth{
+		top: $img1-calibration-date-top;
+		left: $img1-Month-left;
+		width: $img1-Month-width;
+		height: $img1-date-height;
+	}
+
+	.CalibrationDay{
+		top: $img1-calibration-date-top;
+		left: $img1-Day-left;
+
+		width: $img1-Day-width;
+		height: $img1-date-height;
+	}
+	.code{
+		position: absolute;
+		left: $img1-code-left;
+		top: $img1-code-top;
+		height: $img1-code-height;
+	}
+	.cn{
+		top: 93.43%;
+		left: 85.3%;
+		width: 2%;
+		&.totalPage{
+			left:92.1%;
+		}
+	}
+	.en{
+		top: 94.8%;
+		left: 89%;
+		width: 2%;
+		&.totalPage{
+			left: 94.2%
+		}
+	}
+
+}
+
+p{
+	margin: 0;
+}
+#two{
+	font-size: $img2-font-size;
+	.Certificate{
+		top: $img2-Certificate-top;
+		left: $img2-Certificate-left;
+
+		width: $img2-Certificate-width;
+		height: $img2-Certificate-height;
+	}
+	.ReferenceDocuments{
+		font-size: $img2-ReferenceDocuments-font-size;
+		position: absolute;
+		text-align: center;
+		top: $img2-ReferenceDocuments-top;
+		left: $img2-ReferenceDocuments-left;
+
+		width:$img2-ReferenceDocuments-width; 
+		height: $img2-ReferenceDocuments-height;
+
+		resize: none;
+		box-sizing: border-box;
+
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+
+	}
+
+	.CalibrationList{
+		position: absolute;
+		// overflow: hidden;
+		top:$img2-CalibrationList-top;
+		left:$img2-CalibrationList-left;
+		width:$img2-CalibrationList-width;
+		height:$img2-CalibrationList-height;
+
+		
+		display: flex;
+		flex-flow: column;
+		.input{
+			font-size: $img2-CalibrationList-font-size;
+		}
+		.list{
+			// border-bottom: 3px solid black;
+			// overflow: hidden;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-content: center;
+			position: relative;
+			.button_add,.button_sub{
+				position: absolute;
+				top: $img2-button-top;
+				right: $img2-button-right;
+				height: $img2-button-height;
+				width: $img2-button-width;
+				border: 0;
+				cursor: pointer;
+				z-index: 999;
+				&:hover{
+					border:1px solid black;
+				}
+			}
+			.inputContainer{
+				background-color: rgba(0,0,0,0);
+				width: $img2-inputContainer-width;
+				height: 100%;
+				resize: none;
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				text-align: center;
+				border:0;
+				font-size: $img2-inputContainer-font-size;
+				// overflow: hidden;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				&:last-child{
+					border:0;
+				}
+			}
+		}
+	}
+	.Address{
+		top: $img2-Address-top;
+		left: $img2-Address-left;
+		
+		width: $img2-Address-width;
+		height: $img2-Address-height; 
+	}
+	.Temperature{
+		top: $img2-Temperature-top;
+		left: $img2-Temperature-left;
+		
+		width: $img2-Temperature-width;
+		height: $img2-Temperature-height; 
+	}
+	.RelativeHumidity{
+		top: $img2-RelativeHumidity-top;
+		left: $img2-RelativeHumidity-left;
+		
+		width: $img2-RelativeHumidity-width;
+		height: $img2-RelativeHumidity-height; 
+	}
+	.Other{
+		top: $img2-Other-top;
+		left: $img2-Other-left;
+		
+		width: $img2-Other-width;
+		height: $img2-Other-height; 
+	}
+	.condition{
+		top: $img2-condition-top;
+		left: $img2-condition-left;
+		
+		width: $img2-condition-width;
+		height: $img2-condition-height; 
+	}
+	.recommend{
+		top: $img2-recommend-top;
+		left: $img2-recommend-left;
+		
+		width: $img2-recommend-width;
+		height: $img2-recommend-height; 
+		text-align: left;
+	}
+	.cn{
+		top: 93.3%;
+		left: 84.25%;
+		width: 2%;
+		&.totalPage{
+			left:91.1%;
+		}
+	}
+	.en{
+		top: 94.7%;
+		left: 88.1%;
+		width: 2%;
+		&.totalPage{
+			left: 93.2%
+		}
+	}
+}
+
+#three{
+	.Certificate{
+		top: $img3-Certificate-top;
+		left: $img3-Certificate-left;
+
+		width: $img3-Certificate-width;
+		height: $img3-Certificate-height;
+	}
+	.result{
+		position: absolute;
+		top: $img3-result-top;
+		left: $img3-result-left;
+		width: $img3-result-width;
+		height: $img3-result-height;
+		display: block;
+		tbody{
+			font-size: 24px;	
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-flow: column;
+			tr{
+				height: 25%;
+				width: 100%;
+				display: flex;
+				flex-flow: row;
+				td{
+					&.title{
+						flex:1
+					}
+					flex:0.67;
+					height: 100%;
+					width: 33.33%;
+					padding: 0;
+					text-align: center;
+					display: flex;
+					flex-flow: column;
+					justify-content: center;
+				}
+			}
+		}
+		.resultItem{
+			font-size: 1vmin
+		}
+	}
+	.U{
+		width: $img3-U-width;
+		left: $img3-U-left;
+		top: $img3-U-top;
+	}
+	.k{
+		width: $img3-k-width;
+		left: $img3-k-left;
+		top: $img3-k-top;
+	}
+	.cn{
+		top: 95.05%;
+		left: 86.8%;
+		width: 2%;
+		&.totalPage{
+			left:93.5%;
+		}
+	}
+	.en{
+		top: 96.45%;
+		left: 90.9%;
+		width: 2%;
+		&.totalPage{
+			left: 95.6%
+		}
+	}
+}

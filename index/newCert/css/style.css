@@ -1,0 +1,837 @@
+@charset "UTF-8";
+#header {
+  border-bottom: 2px solid black;
+}
+#header a {
+  text-decoration: none;
+  display: block;
+}
+#header .CompanyName {
+  position: static;
+  margin: 0 40% 50px;
+  width: 20%;
+  height: 30%;
+  text-align: center;
+  font-size: 24pt;
+}
+#header .logo {
+  float: left;
+  height: 50px;
+}
+#header .userPortrait, #header .username, #header .quit {
+  float: right;
+  height: 50px;
+}
+#header .name {
+  font-size: 24pt;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#navigation {
+  position: fixed;
+  height: 50px;
+  width: 30px;
+  z-index: 9999;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1366px;
+  min-height: 768px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../imgs/Cert/background.jpg");
+}
+
+#one,
+#two,
+#three {
+  position: relative;
+  margin: 0 20% 0;
+  width: 60%;
+  border: 1px solid black;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input {
+  height: 2%;
+  position: absolute;
+  font-size: 1vmax;
+  font-family: "宋体";
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.input {
+  font-family: "宋体";
+  font-size: 1.3vmax;
+}
+
+.Certificate {
+  border: 0px;
+}
+
+#one #barcode {
+  position: absolute;
+  top: 20.7%;
+  left: 69%;
+  width: 20%;
+  height: 6%;
+}
+#one .Certificate {
+  top: 21.8%;
+  left: 50.5%;
+  width: 18%;
+  height: 2%;
+}
+#one .Customer {
+  top: 27.8%;
+  left: 34.5%;
+  width: 43.6%;
+  height: 2%;
+}
+#one .Address {
+  top: 31.9%;
+  left: 34.5%;
+  width: 43.6%;
+  height: 2%;
+}
+#one .Description {
+  top: 35.9%;
+  left: 34.5%;
+  width: 43.6%;
+  height: 2%;
+}
+#one .ModelType {
+  top: 39.9%;
+  left: 34.5%;
+  width: 43.6%;
+  height: 2%;
+}
+#one .SerialNo {
+  top: 43.9%;
+  left: 34.5%;
+  width: 43.6%;
+  height: 2%;
+}
+#one .Manufacturer {
+  top: 47.8%;
+  left: 34.5%;
+  width: 43.6%;
+  height: 2%;
+}
+#one .Approved,
+#one .CheckedBy,
+#one .CalibratedBy {
+  position: absolute;
+}
+#one .Approved .drapdown_button,
+#one .CheckedBy .drapdown_button,
+#one .CalibratedBy .drapdown_button {
+  border: 0px;
+  height: 60%;
+  top: 20%;
+  right: -60%;
+  width: auto;
+  position: absolute;
+  cursor: pointer;
+  overflow: visible;
+}
+#one .Approved .drapdown_button:hover,
+#one .CheckedBy .drapdown_button:hover,
+#one .CalibratedBy .drapdown_button:hover {
+  border: 1px solid black;
+}
+#one .Approved .drapdown_menu,
+#one .CheckedBy .drapdown_menu,
+#one .CalibratedBy .drapdown_menu {
+  position: absolute;
+  height: 325%;
+  top: 105%;
+  z-index: 9999;
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+}
+#one .Approved .drapdown_menu img,
+#one .CheckedBy .drapdown_menu img,
+#one .CalibratedBy .drapdown_menu img {
+  cursor: pointer;
+  border: 1px solid grey;
+  border-top: 0px;
+  height: 100%;
+}
+#one .Approved .drapdown_menu img:first-child,
+#one .CheckedBy .drapdown_menu img:first-child,
+#one .CalibratedBy .drapdown_menu img:first-child {
+  border-top: 1px solid grey;
+}
+#one .Approved .selected,
+#one .CheckedBy .selected,
+#one .CalibratedBy .selected {
+  position: absolute;
+  height: 100%;
+  border: 0;
+  width: 100%;
+}
+#one .Approved {
+  top: 54.5%;
+  left: 72.2%;
+  width: 11.5%;
+  height: 3.5%;
+}
+#one .CheckedBy {
+  top: 58.6%;
+  left: 72.2%;
+  width: 11.5%;
+  height: 3.5%;
+}
+#one .CalibratedBy {
+  top: 62.5%;
+  left: 72.2%;
+  width: 11.5%;
+  height: 3.5%;
+}
+#one .ReceivedCalendar_logo,
+#one .CalibrationCalendar_logo {
+  border: 1px;
+  position: absolute;
+  cursor: pointer;
+}
+#one .ReceivedCalendar_logo:hover,
+#one .CalibrationCalendar_logo:hover {
+  border: 1px solid black;
+}
+#one .ReceivedCalendar_logo {
+  top: 73.5%;
+  left: 64.5%;
+  width: 3%;
+  height: 2%;
+}
+#one .CalibrationCalendar_logo {
+  top: 79.6%;
+  left: 64.5%;
+  width: 3%;
+  height: 2%;
+}
+#one .ReceivedCalendar,
+#one .CalibrationCalendar {
+  position: absolute;
+  z-index: 9999;
+}
+#one .ReceivedCalendar {
+  top: 73.5%;
+  left: 67.5%;
+}
+#one .CalibrationCalendar {
+  top: 79.6%;
+  left: 67.5%;
+}
+#one .ReceivedYear {
+  top: 73.9%;
+  left: 44%;
+  width: 5%;
+  height: 1.3%;
+}
+#one .ReceivedMonth {
+  top: 73.9%;
+  left: 53%;
+  width: 2.5%;
+  height: 1.3%;
+}
+#one .ReceivedDay {
+  top: 73.9%;
+  left: 58.5%;
+  width: 2.5%;
+  height: 1.3%;
+}
+#one .CalibrationYear {
+  top: 80%;
+  left: 44%;
+  width: 5%;
+  height: 1.3%;
+}
+#one .CalibrationMonth {
+  top: 80%;
+  left: 53%;
+  width: 2.5%;
+  height: 1.3%;
+}
+#one .CalibrationDay {
+  top: 80%;
+  left: 58.5%;
+  width: 2.5%;
+  height: 1.3%;
+}
+#one .code {
+  position: absolute;
+  left: 75%;
+  top: 73%;
+  height: 10%;
+}
+#one .cn {
+  top: 93.43%;
+  left: 85.3%;
+  width: 2%;
+}
+#one .cn.totalPage {
+  left: 92.1%;
+}
+#one .en {
+  top: 94.8%;
+  left: 89%;
+  width: 2%;
+}
+#one .en.totalPage {
+  left: 94.2%;
+}
+
+p {
+  margin: 0;
+}
+
+#two {
+  font-size: 20pt;
+}
+#two .Certificate {
+  top: 4.8%;
+  left: 77%;
+  width: 18%;
+  height: 2%;
+}
+#two .ReferenceDocuments {
+  font-size: 1.2vmax;
+  position: absolute;
+  text-align: center;
+  top: 12.7%;
+  left: 5.5%;
+  width: 87%;
+  height: 8.9%;
+  resize: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+#two .CalibrationList {
+  position: absolute;
+  top: 31.2%;
+  left: 5.45%;
+  width: 86.95%;
+  height: 21.5%;
+  display: flex;
+  flex-flow: column;
+}
+#two .CalibrationList .input {
+  font-size: 1vmax;
+}
+#two .CalibrationList .list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+#two .CalibrationList .list .button_add, #two .CalibrationList .list .button_sub {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  border: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+#two .CalibrationList .list .button_add:hover, #two .CalibrationList .list .button_sub:hover {
+  border: 1px solid black;
+}
+#two .CalibrationList .list .inputContainer {
+  background-color: rgba(0, 0, 0, 0);
+  width: 16.6666666667%;
+  height: 100%;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0;
+  font-size: 1.5vmax;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+#two .CalibrationList .list .inputContainer:last-child {
+  border: 0;
+}
+#two .Address {
+  top: 62.3%;
+  left: 36.5%;
+  width: 54%;
+  height: 2%;
+}
+#two .Temperature {
+  top: 66.7%;
+  left: 21.3%;
+  width: 11.5%;
+  height: 2%;
+}
+#two .RelativeHumidity {
+  top: 66.7%;
+  left: 50.5%;
+  width: 11.3%;
+  height: 2%;
+}
+#two .Other {
+  top: 66.7%;
+  left: 79.7%;
+  width: 11.3%;
+  height: 2%;
+}
+#two .condition {
+  top: 70.8%;
+  left: 50.5%;
+  width: 40%;
+  height: 2%;
+}
+#two .recommend {
+  top: 75.9%;
+  left: 19%;
+  width: 71.5%;
+  height: 2%;
+  text-align: left;
+}
+#two .cn {
+  top: 93.3%;
+  left: 84.25%;
+  width: 2%;
+}
+#two .cn.totalPage {
+  left: 91.1%;
+}
+#two .en {
+  top: 94.7%;
+  left: 88.1%;
+  width: 2%;
+}
+#two .en.totalPage {
+  left: 93.2%;
+}
+
+#three .Certificate {
+  top: 4.5%;
+  left: 77%;
+  width: 18%;
+  height: 2%;
+}
+#three .result {
+  position: absolute;
+  top: 17.4%;
+  left: 17%;
+  width: 51.8%;
+  height: 13.3%;
+  display: block;
+}
+#three .result tbody {
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+#three .result tbody tr {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+#three .result tbody tr td {
+  flex: 0.67;
+  height: 100%;
+  width: 33.33%;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+#three .result tbody tr td.title {
+  flex: 1;
+}
+#three .result .resultItem {
+  font-size: 1vmin;
+}
+#three .U {
+  width: 5%;
+  left: 33%;
+  top: 34.7%;
+}
+#three .k {
+  width: 5%;
+  left: 41.5%;
+  top: 34.7%;
+}
+#three .cn {
+  top: 95.05%;
+  left: 86.8%;
+  width: 2%;
+}
+#three .cn.totalPage {
+  left: 93.5%;
+}
+#three .en {
+  top: 96.45%;
+  left: 90.9%;
+  width: 2%;
+}
+#three .en.totalPage {
+  left: 95.6%;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#nav .container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+#nav .one {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#nav .andong_logo {
+  margin-top: 12px;
+}
+
+#nav .title {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-left: -180px;
+  font-family: 瀹嬩綋;
+  box-sizing: border-box;
+  padding-left: 40px;
+  background: url("../../../imgs/navigator/home.png") no-repeat left;
+  cursor: pointer;
+}
+
+#nav .user {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 200px;
+}
+
+#nav .user .one {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#nav .user .logo {
+  border-radius: 50%;
+  background-color: #ddd9d9;
+  width: 39px;
+  height: 39px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#nav .user .name {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+#nav .user .shutdown {
+  margin-top: 17px;
+  cursor: pointer;
+}
+
+#nav .two {
+  margin-top: 12px;
+  width: 980px;
+}
+
+#nav .line {
+  float: right;
+}
+
+#nav .nameContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 22%;
+  margin: 0 auto;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 46px;
+  margin-bottom: 27px;
+}
+#nav .nameContainer input {
+  height: 40px;
+  border: 0;
+  outline: none;
+  color: white;
+  position: relative;
+  font-size: 16px;
+  text-align: left;
+}
+#nav .nameContainer span {
+  width: 35%;
+  text-align: center;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#initial {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: fixed;
+  z-index: 2;
+}
+#initial .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#initial .container .text {
+  font-size: 48px;
+  color: #fff;
+  font-family: "微软雅黑";
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 500px;
+  margin-left: -250px;
+  z-index: 9999;
+  height: 300px;
+  text-align: center;
+}
+#initial .container .percentage {
+  color: #069;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 300px;
+  width: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  z-index: 9999;
+  text-align: center;
+  line-height: 300px;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#canvasInside, #canvasOutside, #canvasCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+#canvasCenter {
+  z-index: 11;
+}
+
+#canvasOutside {
+  z-index: 9999;
+}
+
+.calendar {
+  position: absolute;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.calendar tfoot,
+.calendar tbody,
+.calendar thead,
+.calendar caption {
+  padding: 3px 0;
+  text-align: center;
+  opacity: 1;
+  color: white;
+  background-color: black;
+}
+
+.calendar caption,
+.calendar thead {
+  border-bottom: 1px solid #fff;
+}
+
+.calendar:hover tfoot,
+.calendar:hover tbody,
+.calendar:hover thead,
+.calendar:hover caption {
+  opacity: 1;
+}
+
+.calendar td.today {
+  opacity: .8;
+}
+
+.calendar td {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.calendar td:hover {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.calendar .circular-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.calendar img {
+  height: 10px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.calendar img.left {
+  float: left;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.calendar img.right {
+  float: right;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.calendar th,
+.calendar td {
+  padding: 0 5px 3px;
+}
+
+.calendar td.today {
+  text-decoration: underline;
+  opacity: .8;
+  color: black;
+  background-color: #fff;
+}
+
+.calendar tfoot {
+  width: inherit;
+  height: inherit;
+}
+
+.calendar tfoot img {
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.calendar tfoot td:hover {
+  border: 1px solid white;
+}
+
+#controler {
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  color: white;
+}
+#controler .button {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 2px solid #fff;
+  margin-top: 12px;
+  width: 168px;
+  height: 37px;
+  padding-left: 16px;
+  line-height: 37px;
+  cursor: pointer;
+}
+#controler .button img {
+  float: right;
+  height: 28px;
+  margin-right: 7px;
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1600px) {
+  #controler {
+    right: 130px;
+  }
+}
+@media screen and (max-width: 1600px) and (min-width: 1367px) {
+  #controler {
+    right: 80px;
+  }
+}
+@media screen and (max-width: 1367px) and (min-width: 1200px) {
+  #controler {
+    right: 0;
+  }
+
+  .button {
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

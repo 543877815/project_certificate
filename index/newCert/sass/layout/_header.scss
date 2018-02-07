@@ -1,0 +1,29 @@
+#header{
+	border-bottom: 2px solid black;
+	a{
+		text-decoration: none;
+		display: block;
+	}
+	.CompanyName{
+		position: static;
+		margin: 0 40% 50px;
+		width: 20%;
+		height: 30%;
+		text-align: center;
+		font-size: 24pt;
+	}
+	.logo{
+		float: left;
+		height: 50px;
+	}
+	.userPortrait,.username,.quit{
+		float: right;
+		height: 50px;
+	}
+	.name{
+		font-size: 24pt;
+		width: 200px;
+		margin: 0 auto;
+		text-align: center;
+	}	
+}

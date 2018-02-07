@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+$input-font-size:1vmax;
+$input-font-family:"宋体";
+$input-height:2%;
+$input-class-font-size:1.3vmax;
+
+$img1-text-left:34.5%;
+$img1-text-width:43.6%;
+$img1-text-height:$input-height;
+
+// 证书编号
+$img1-Certificate-top:21.8%;
+$img1-Certificate-left:50.5%;
+$img1-Certificate-width:18%;
+$img1-Certificate-height:$input-height;
+
+//委托方、地址、物品名称、型号规格、物品编号、制造单位
+$img1-Customer-top:27.8%;
+$img1-Customer-left:$img1-text-left;
+$img1-Customer-width:$img1-text-width;
+$img1-Customer-height:$input-height;
+
+$img1-Address-top:31.9%;
+$img1-Address-left:$img1-text-left;
+$img1-Address-width:$img1-text-width;
+$img1-Address-height:$input-height;
+
+$img1-Description-top:35.9%;
+$img1-Description-left:$img1-text-left;
+$img1-Description-width:$img1-text-width;
+$img1-Description-height:$input-height;
+
+$img1-ModelType-top:39.9%;
+$img1-ModelType-left:$img1-text-left;
+$img1-ModelType-width:$img1-text-width;
+$img1-ModelType-height:$input-height;
+
+$img1-SerialNo-top:43.9%;
+$img1-SerialNo-left:$img1-text-left;
+$img1-SerialNo-width:$img1-text-width;
+$img1-SerialNo-height:$input-height;
+
+$img1-Manufacturer-top:47.8%;
+$img1-Manufacturer-left:$img1-text-left;
+$img1-Manufacturer-width:$img1-text-width;
+$img1-Manufacturer-height:$input-height;
+
+//下拉选择框
+$img1-dropdown-button-height:60%;
+$img1-dropdown-button-right:-60%;
+$img1-dropdown-button-top:(100%-$img1-dropdown-button-height)/2;
+
+$img1-dropdown-menu-height:325%;
+$img1-dropdown-menu-top:105%;
+
+$img1-select-left:72.2%;
+$img1-select-width:11.5%;
+$img1-select-height:3.5%;
+
+$img1-Approved-top:54.5%;
+$img1-Approved-left:$img1-select-left;
+$img1-Approved-width:$img1-select-width;
+$img1-Approved-height:$img1-select-height;
+
+$img1-CheckedBy-top:58.6%;
+$img1-CheckedBy-left:$img1-select-left;
+$img1-CheckedBy-width:$img1-select-width;
+$img1-CheckedBy-height:$img1-select-height;
+
+$img1-CalibratedBy-top:62.5%;
+$img1-CalibratedBy-left:$img1-select-left;
+$img1-CalibratedBy-width:$img1-select-width;
+$img1-CalibratedBy-height:$img1-select-height;
+
+//日期
+$img1-date-height:1.3%;
+$img1-received-date-top:73.9%;
+$img1-calibration-date-top:80%;
+$img1-Year-left:44%;
+$img1-Year-width:5%;
+$img1-Month-left:53%;
+$img1-Month-width:2.5%;
+$img1-Day-left:58.5%;
+$img1-Day-width:2.5%;
+
+$img1-Calendar-left:67.5%;
+$img1-ReceivedCalendar-button-top:73.5%;
+$img1-CalibrationCalendar-button-top:79.6%;
+
+$img1-Calendar-button-left:64.5%;
+$img1-Calendar-button-width:3%;
+$img1-Calendar-button-height:2%;
+
+$img1-ReceivedCalendar-top:$img1-ReceivedCalendar-button-top;
+$img1-ReceivedCalendar-left:$img1-Calendar-left;
+$img1-ReceivedCalendar-width:$img1-Calendar-button-width;
+$img1-ReceivedCalendar-height:$img1-Calendar-button-height;
+
+$img1-CalibrationCalendar-top:$img1-CalibrationCalendar-button-top;
+$img1-CalibrationCalendar-left:$img1-Calendar-left;
+$img1-CalibrationCalendar-width:$img1-Calendar-button-width;
+$img1-CalibrationCalendar-height:$img1-Calendar-button-height;
+
+//二维码
+$img1-code-left:75%;
+$img1-code-top:73%;
+$img1-code-height:10%;
+
+
+//第二张图
+$img2-font-size:20pt;
+
+$img2-Certificate-top:4.8%;
+$img2-Certificate-left:77%;
+$img2-Certificate-width:18%;
+$img2-Certificate-height:$input-height;
+
+$img2-ReferenceDocuments-top:12.7%;
+$img2-ReferenceDocuments-left:5.5%;
+$img2-ReferenceDocuments-width:87%;
+$img2-ReferenceDocuments-height:8.9%;
+$img2-ReferenceDocuments-font-size: 1.2vmax;
+
+$img2-CalibrationList-font-size:1vmax;
+$img2-CalibrationList-top: 31.2%;
+$img2-CalibrationList-left: 5.45%;
+$img2-CalibrationList-width:86.95%;
+$img2-CalibrationList-height: 21.5%;
+
+$img2-button-top: 10px;
+$img2-button-right: 10px;
+$img2-button-height: 20px;
+$img2-button-width: 20px;
+
+$img2-inputContainer-width: (100%/6);
+$img2-inputContainer-font-size: 1.5vmax;
+
+$img2-input-height:2%;
+
+$img2-Address-top: 62.3%;
+$img2-Address-left: 36.5%;
+$img2-Address-width: 54%;
+$img2-Address-height: $img2-input-height; 
+
+$img2-Temperature-top: 66.7%;
+$img2-Temperature-left: 21.3%;
+$img2-Temperature-width: 11.5%;
+$img2-Temperature-height: $img2-input-height; 
+
+$img2-RelativeHumidity-top: $img2-Temperature-top;
+$img2-RelativeHumidity-left: 50.5%;
+$img2-RelativeHumidity-width: 11.3%;
+$img2-RelativeHumidity-height: $img2-input-height; 
+
+$img2-Other-top: $img2-Temperature-top;
+$img2-Other-left: 79.7%;
+$img2-Other-width: 11.3%;
+$img2-Other-height: $img2-input-height; 
+
+$img2-condition-top: 70.8%;
+$img2-condition-left: 50.5%;
+$img2-condition-width: 40%;
+$img2-condition-height: $img2-input-height; 
+
+$img2-recommend-top: 75.9%;
+$img2-recommend-left: 19%;
+$img2-recommend-width: 71.5%;
+$img2-recommend-height: $img2-input-height; 
+
+//第三张图
+$img3-Certificate-top:4.5%;
+$img3-Certificate-left:77%;
+$img3-Certificate-width:18%;
+$img3-Certificate-height:$input-height;
+
+$img3-U-width:5%;
+$img3-U-left:33%;
+$img3-U-top:34.7%;
+
+$img3-k-width:$img3-U-width;
+$img3-k-left:41.5%;
+$img3-k-top:$img3-U-top;
+
+$img3-result-top:17.4%;
+$img3-result-left:17.0%;
+$img3-result-width:51.8%;
+$img3-result-height:13.3%;

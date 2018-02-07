@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+	<div id="header">
+		<h2>安东公司证书生成系统</h2>
+		<img src="imgs/login/line.png" alt="" class="line" draggable="false" ondragstart="return false;">
+	</div>
+	<div id="container">
+		<div class="picture">
+			<img src="imgs/login/picture.png" alt="" draggable="false" ondragstart="return false;">
+		</div>
+		<div id="loginPanel">
+			<div class="container">
+				<div class="header">
+					用户登录
+				</div>
+				<div class="account" id="username">
+					<input type="text" placeholder="请输入用户名" maxlength="20">
+				</div>
+				<div class="password" id="password">
+					<input type="password" placeholder="请输入密码" maxlength="20">
+					<p class="warning passwordWrong">用户名或密码错误</p>
+				</div>
+				<div class="ver_codeContainer">
+					<div class="ver_codeInput" id="ver_code">
+						<input type="text" placeholder="请输入验证码" maxlength="6">
+					</div>
+					<div class="ver_code">
+						<img src="http://www.alexzfx.com/exportpdf/get_ver_code" alt="" id="get_ver_code" draggable="false" ondragstart="return false;">
+						<p class="warning verCodeWrong">验证码错误</p>
+					</div>
+				</div>
+				<div id="login">
+					登录
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script/common.js"></script>
+	<script src="script/jquery-3.2.1.min.js"></script>
+	<script src="script/script.js?v=1"></script>
+</body>
+</html>
+

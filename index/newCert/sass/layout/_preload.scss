@@ -1,0 +1,69 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+#initial{
+    width: 100%;
+    height: 100%;
+    background: black;
+    // display: none;
+    position: fixed;
+    z-index: 2;
+    .container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .text{
+            font-size: 48px;
+            color: #fff;
+            font-family: "微软雅黑";
+            position: absolute;
+            left: 50%;
+            top:30%;
+            width: 500px;
+            margin-left: -250px;
+            z-index: 9999;
+            height: 300px;
+            text-align: center;
+        }
+        .percentage{
+            color: #069;
+            font-size: 24px;
+            font-family: "微软雅黑";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 300px;
+            width: 300px;
+            margin-left: -150px;
+            margin-top: -150px;
+            z-index: 9999;
+            text-align: center;
+            line-height: 300px;
+            moz-user-select: -moz-none; 
+            -moz-user-select: none; 
+            -o-user-select:none; 
+            -khtml-user-select:none; 
+            -webkit-user-select:none; 
+            -ms-user-select:none; 
+            user-select:none;
+        }
+    }
+}
+#canvasInside,#canvasOutside,#canvasCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+#canvasCenter{
+    z-index: 11;
+}
+#canvasOutside{
+    z-index: 9999;
+}

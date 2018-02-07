@@ -1,0 +1,45 @@
+html,
+body
+{
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background: url('../../../imgs/media-photo/background.jpg');
+}
+#container
+{
+    display: flex;
+
+    margin-top: 25%;
+
+    text-align: center;
+
+    flex-flow: column;
+}
+#container .title
+{
+    font-size: 1.3rem;
+
+    word-wrap: break-word;
+    word-break: break-all;
+
+    color: #fff;
+}
+#container .container
+{
+    font-size: 1.4rem;
+
+    box-sizing: border-box;
+    width: 78%;
+    height: 12%;
+    margin: 0 auto;
+    margin-top: 4.1229%;
+    padding: 20px;
+
+    color: #fff;
+    background: rgba(255,255,255,.25);
+}

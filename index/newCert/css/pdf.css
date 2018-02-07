@@ -1,0 +1,113 @@
+#one,
+#two,
+#three {
+  border: 0px;
+  width: 100%;
+}
+
+.margin-control {
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#download {
+  display: none;
+}
+
+img {
+  width: 99% !important;
+  height: 99% !important;
+}
+
+.input, input, div, img {
+  border: 0px !important;
+}
+
+.calendar_logo,
+.drapdown_menu,
+.calendar,
+.drapdown_button,
+.button_add,
+.button_sub {
+  display: none !important;
+}
+
+#one,
+#two,
+#three {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+#header {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+#one .selected {
+  height: 90% !important;
+}
+#one .CalibratedBy {
+  top: 60.6%;
+}
+#one .CalibratedBy {
+  top: 60.6%;
+}
+#one .ReceivedYear,
+#one .CalibrationYear {
+  width: 5%;
+  height: 1.5%;
+  left: 45.5%;
+  font-size: 12px;
+}
+#one .ReceivedYear,
+#one .ReceivedMonth,
+#one .ReceivedDay {
+  top: 71.5%;
+}
+#one .CalibrationYear,
+#one .CalibrationMonth,
+#one .CalibrationDay {
+  top: 77.7%;
+}
+#one .ReceivedMonth,
+#one .CalibrationMonth,
+#one .ReceivedDay,
+#one .CalibrationDay {
+  width: 3%;
+  height: 1.5%;
+  font-size: 12px;
+}
+#one .ReceivedDay,
+#one .CalibrationDay {
+  left: 58%;
+}
+#one .ReceivedMonth,
+#one .CalibrationMonth {
+  left: 52.7%;
+}
+
+#two .Certificate {
+  top: 4.8%;
+}
+#two .CalibrationList {
+  width: 87%;
+  height: 21.5%;
+}
+#two .CalibrationList .list {
+  border-bottom: 1px solid black !important;
+}
+#two .recommend {
+  top: 75.9%;
+}
+
+#three .result {
+  top: 17.2%;
+}
+#three .result tr {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=pdf.css.map */

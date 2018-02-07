@@ -1,0 +1,106 @@
+.calendar
+{
+    position: absolute;
+
+    overflow: hidden;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    
+    border-radius: 0 0 10px 10px;
+}
+.calendar tfoot,
+.calendar tbody,
+.calendar thead,
+.calendar caption
+{
+    padding: 3px 0;
+
+    text-align: center;
+
+    opacity: 1;
+    color: white;
+    background-color: rgba(0,0,0,1);
+}
+.calendar caption,
+.calendar thead
+{
+    border-bottom: 1px solid #fff;
+}
+.calendar:hover tfoot,
+.calendar:hover tbody,
+.calendar:hover thead,
+.calendar:hover caption
+{
+    opacity: 1;
+    
+}
+.calendar td.today
+{
+    opacity: .8;
+}
+.calendar td{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.calendar td:hover
+{
+   border: 1px solid white;
+   background-color: rgba(0,0,0,.8);
+}
+.calendar .circular-top
+{
+    border-radius: 10px 10px 0 0;
+}
+.calendar img
+{
+    height: 10px;
+    border: 1px;
+    cursor: pointer;
+}
+.calendar img.left
+{
+    float: left;
+
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.calendar img.right
+{
+    float: right;
+
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.calendar th,
+.calendar td
+{
+    padding: 0 5px 3px;
+}
+.calendar td.today
+{
+    text-decoration: underline;
+
+    opacity: .8;
+    color: black;
+    background-color: #fff;
+}
+.calendar tfoot
+{
+    width: inherit;
+    height: inherit;
+}
+
+.calendar tfoot img
+{
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+
+    vertical-align: middle;
+}
+.calendar tfoot td:hover
+{
+    border: 1px solid white;
+}
