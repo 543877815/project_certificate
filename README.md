@@ -1,0 +1,3 @@
+# project_certificate
+请放在 localhost 下运行，否则PDF无法生成背景图片
+本地开发解决跨域用的是nginx反向代理，解决cookie用的fiddler
